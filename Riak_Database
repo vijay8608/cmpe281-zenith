@@ -1,0 +1,12 @@
+Riak database will be used to implement shopping cart.
+
+Riak is open source distributed NoSQL database that ensures scalability as well as reliability.
+Riak ensures :
+1. High availability
+2. Scalability
+3. Fault tolerance
+4. Operational simplicity
+
+Riak is content-agnostic database which allows you to store anything you want - from JSON, Images, Binary, HTML etc.Riak database is used 
+many Retail & eCommerce - BestBuy, Betzold, ideel, Shopzilla etc.
+
