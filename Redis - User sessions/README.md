@@ -39,7 +39,11 @@ The session itself resides in the server. For each request, the client transmits
 
 ![alt text][logo]
 
-[logo]: 
+[logo]: https://github.com/nguyensjsu/cmpe281-zenith/blob/master/Redis%20-%20User%20sessions/Images/Workflow.png "workflow"
+
+When using a memory cache, cookie only contains a session ID. This removes the risk of private user information being exposed in the cookie.
+
+
 
 
 
