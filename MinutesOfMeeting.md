@@ -15,6 +15,7 @@ Agenda: 1)Discuss the project requirements
 Action items:
 
 1.Analyse the project requirements and define the use case/ 09/17/2017
+
 2.Xp values assigned to each team member / 09/17/2017 
   ```
   Sayali More : Feedback 
@@ -35,8 +36,13 @@ Agenda: 1)Discuss the UI wireframes
         3)Discuss challeges in environment setup
 
 Action items:
-        1)Discuss use case in detail and draw UI wireframes /   09/24/2017
-        2)Assign data models  /    09/24/2017
-        3)Install NoSQL databases on local  /  09/24/2017
+
+1)Discuss use case in detail and draw UI wireframes /   09/24/2017
+
+2)Assign data models  /    09/24/2017
+
+3)Install NoSQL databases on local  /  09/24/2017
+
+
 ----------------------------------------------------------------------------------------------------------------------------
         
