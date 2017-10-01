@@ -5,5 +5,5 @@
 3. Refactor the system to maximize the value.
 4. Do not implement a feature we do not need now.
 
-09/30/2017
+**09/30/2017**
 Everyone in the team is working on database assigned to them. Research and set up the enviornment.
