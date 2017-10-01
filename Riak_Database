@@ -10,3 +10,15 @@ Riak ensures :
 Riak is content-agnostic database which allows you to store anything you want - from JSON, Images, Binary, HTML etc.Riak database is used 
 many Retail & eCommerce - BestBuy, Betzold, ideel, Shopzilla etc.
 
+Riak Installation Steps :
+
+Update packages:
+$ sudo apt-get update
+$ sudo apt-get -y upgrade
+
+Install Riak:
+$ sudo apt-get install riak
+
+Verify Riak installation :
+$ sudo riak-admin test
+
