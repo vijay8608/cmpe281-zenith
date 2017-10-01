@@ -1,0 +1,13 @@
+MongoDB Setup
+
+Installation with Homebrew
+1. Update Homebrew package
+   brew update
+2. Install MongoDB
+   brew install mongodb
+
+Running MongoDB
+1. Create data directory- It is the directory where mongoDB instance stores it data  (by default /data/db)
+   mkdir -p /data/db
+2. Run mongoDB
+   sudo mongod
