@@ -9,3 +9,7 @@ Other Graph Databases are Oracle NoSQL Database, OrientDB, HypherGraphDB, GraphB
 We would be using Neo4j DB for recommendation purpose in our application.
 It works on real time data, supports full ACID (Atomicity, Consistency, Isolation, and Durability) rules , 
 is scalable and reliable.
+
+Neo4j, does NOT require complex joins to retrieve connected/related data as it is very easy to retrieve its adjacent node or relationship details without joins or indexes.
+
+
