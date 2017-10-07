@@ -1,0 +1,16 @@
+Steps to Install Neo4j DB on MAC OS
+
+1. Download NEo4j by visiting https://neo4j.com/
+2. It has download button on the top right hand side. Click it.
+3. Download the community edition of the software.
+4. Download Neo4j software compatible with your operating systems.
+5. Click on the downloaded dmg package.
+6. After the extraction. Move the file to applications folder by dragging.
+7. Open Neo4j from your Applications folder. You might need to acknowledge that you downloaded the application from the Internet.
+8. Click on the Start button to start the Neo4j server.
+9. Open the provided URL in your local web browser.
+10. Change the password for the neo4j account. (the defualt password would be neo4j).
+
+
+Run the practice database cypher queries using the default data set provided by Neo4j DB in the browser.
+
