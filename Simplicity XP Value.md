@@ -7,3 +7,6 @@
 
 **09/30/2017**
 Everyone in the team is working on database assigned to them. Research and set up the enviornment.
+
+**10/07/2017**
+Refactored the UI wireframe diagram after discussion with team members
