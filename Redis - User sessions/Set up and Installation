@@ -1,0 +1,20 @@
+Install on mac
+brew install redis
+
+
+•	Download latest redis version from http://download.redis.io/redis-stable.tar.gz.
+•	Compile redis
+Go to folder where you downloaded the redis
+eg. cd / Applications/redis-4.0.2
+make
+
+
+•	After the compilation the src directory inside the Redis distribution is populated with the different executables that are part of Redis:
+o	redis-server is the Redis Server itself.
+o	redis-cli is the command line interface utility to talk with Redis.
+
+•	Start redis server
+            src/redis-server
+•	Start redis client
+            src/redis-client
+
