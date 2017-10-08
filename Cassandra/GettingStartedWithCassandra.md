@@ -59,3 +59,27 @@ cqlsh:doordash> select *from order_doordash where order_item = 'Pizza';
 
 (1 rows)
 ```
+
+### Update table
+```
+cqlsh:doordash> update order_doordash set order_quantity = 2 where order_id = 111;
+cqlsh:doordash> select *from order_doordash where order_item = 'Pizza';
+
+ order_id | order_item | order_price | order_quantity
+----------+------------+-------------+----------------
+      111 |      Pizza |          10 |              2
+
+(1 rows)
+```
+
+### Delete from table
+```
+cqlsh:doordash> delete from order_doordash where order_id = 111;
+cqlsh:doordash> select *from order_doordash;
+
+ order_id | order_item | order_price | order_quantity
+----------+------------+-------------+----------------
+      112 |     Burger |          15 |              1
+
+(1 rows)
+```
