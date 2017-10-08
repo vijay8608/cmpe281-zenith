@@ -1,0 +1,12 @@
+Sample Database and Collection Creation
+
+Commands for database creation
+•	Create Database: use 
+> use Employee
+It is automatically switched to database Employee
+
+•	To check your currently selected database: db
+>db
+
+•	Check database list: show dbs
+>show dbs
