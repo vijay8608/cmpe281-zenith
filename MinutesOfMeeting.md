@@ -2,7 +2,7 @@
 
 ## Meeting Minutes- [Team Zenith]
 
-### Weekly meeting 09/17 12-2pm
+### Weekly meeting 09/17 1-2pm
 
 Location : MLK-Library Date : 09/17/2017 Time : 1pm-2pm
 
@@ -25,9 +25,9 @@ Action items:
   Vijay Yadav : Respect 
   ```
 ----------------------------------------------------------------------------------------------------------------------------
-### Weekly meeting 09/24 12-2pm
+### Weekly meeting 09/24 1-2pm
 
-Location : MLK-Library Date : 09/24/2017 Time : 1pm-2pm#
+Location : MLK-Library Date : 09/24/2017 Time : 1pm-2pm
 
 Attendance: Sayali More Snehal Phatangare Sachin Dadaso Waghmode Shraddha Yeole Vijay Yadav
 
@@ -43,6 +43,23 @@ Action items:
 
 3)Install NoSQL databases on local  /  09/24/2017
 
-
 ----------------------------------------------------------------------------------------------------------------------------
-        
+ ### Weekly meeting 10/01 1-2pm
+ 
+ Location : MLK-Library Date : 10/01/2017 Time : 1pm-2pm
+
+Attendance: Sayali More Snehal Phatangare Sachin Dadaso Waghmode Shraddha Yeole Vijay Yadav
+
+Agenda: 1)Modify the UI wireframes 
+        2)Setup NoSQL databases on local 
+        3)Discuss the database/tables/DDL/query operations in detail
+
+Action items:
+
+1) Discuss the end to end flow of the system and modify UI wireframe /       10/01/2017 
+
+2) Discuss the steps to set up noSQL databases on local/   10/01/2017
+
+3) Create objects, manipulate data, and query data in Cassandra/MongoDB/Neo4j/Redis/Riak./  10/01/2017
+
+-----------------------------------------------------------------------------------------------------------------------------
