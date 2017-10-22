@@ -21,4 +21,15 @@
 -
 -Verify Riak installation :
 -$ sudo riak-admin test
--
+
+Riak Query for Table creation:
+table = 'Shopping_Cart'
+fmt = """CREATE TABLE {table} (
+food_Item varchar not null,
+quantity varchar not null,
+time timestamp not null,
+description varchar not null,
+price double,
+"""
+query = fmt.format(table=table)
+ts_obj - client.ts_query(table,query)
