@@ -1,0 +1,53 @@
+  % DBSIZE
+    :0
+DBSIZE returns the number of keys in the database. This is a new database with no keys, so Redis says :0.
+
+The database is empty, but if we try to GET a value:
+
+    % GET hello
+    $-1
+GET fetches the value at the provided key. The key hello doesn’t exist, so Redis says $-1, which is like nil or null.  Set a value for that key:
+
+    % SET hello 5
+    % world
+    +OK
+SET takes three parameters: the name of the key, the size of the value in bytes, and, after a newline, the value itself. Here, we SET the key hello to the 5-byte value world:
+
+    % GET hello
+    $5
+    world
+We receive the value we just set, but with an extra line that reads $5. Just like with SET, the size of the value in bytes is returned first, then a newline, then the value.
+
+We can ask Redis if a key exists:
+
+    % EXISTS bigkahuna
+    :0
+
+    % EXISTS hello
+    :1
+Here, :0 and :1 mean false and true, respectively.
+
+Let’s delete the hello key:
+
+    % DEL hello
+    :1
+DEL deletes the value stored at the key hello. The command succeeds and Redis says :1, the number of records deleted. We can delete multiple keys by separating them with a space.
+
+Say we want to set the value of a key only if that key doesn’t exist. Enter SETNX:
+
+    % SETNX bigkahuna 22
+    % that is a tasty burger
+    :1
+
+    % GET bigkahuna
+    $22
+    that's a tasty burger
+
+    % SETNX bigkahuna 4
+    % d'oh
+    :0
+
+    % GET bigkahuna
+    $22
+    that's a tasty burger
+The second SETNX fails because the key bigkahuna, having been created by the first SETNX, now exists.
