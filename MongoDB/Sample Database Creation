@@ -2,7 +2,7 @@ Sample Database and Collection Creation
 
 Commands for database creation
 •	Create Database: use 
-> use Employee
+> use ShoppingCart
 It is automatically switched to database Employee
 
 •	To check your currently selected database: db
@@ -13,4 +13,9 @@ It is automatically switched to database Employee
 admin  0.000GB
 local  0.000GB
 
-The Employee database is not present in list. To display database, you need to insert at least one document into it.
+The ShoppingCart database is not present in list. To display database, you need to insert at least one document into it.
+
+Create collection:
+Collection in MongoDB is equivalent to table in SQl.
+> db.createCollection("MenuItems")
+{ "ok" : 1 }
