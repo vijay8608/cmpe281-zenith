@@ -20,3 +20,8 @@ Necessary changes suggested :
 
 1. Reviewed revised UI wireframe diagram and recorded all the feedbacks.
 2. Reviewed Activity diagram for the system.
+
+Following factors were considered for review:
+1. Basic workflow with all activities and actions.
+2. All the decision points and parameters.
+
