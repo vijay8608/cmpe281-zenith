@@ -63,3 +63,21 @@ Action items:
 3) Create objects, manipulate data, and query data in Cassandra/MongoDB/Neo4j/Redis/Riak./  10/01/2017
 
 -----------------------------------------------------------------------------------------------------------------------------
+ ### Weekly meeting 10/14 1-2pm
+ 
+ Location : MLK-Library Date : 10/14/2017 Time : 1pm-2pm
+
+Attendance: Sayali More Snehal Phatangare Sachin Dadaso Waghmode Shraddha Yeole Vijay Yadav
+
+Agenda: 1)Discuss activity diagram  
+        2)Getting started with NoSQL data models
+        3)Update backlog with implemntation tasks
+Action items:
+
+1) Discuss system behaviour and activity diagram /       10/14/2017 
+
+2) Discuss the steps followed to create databases and to query data in Cassandra/MongoDB/Neo4j/Redis/Riak./  10/14/2017
+
+3) Create implementation tasks and add it to backlog in task board/  10/14/2017
+
+-----------------------------------------------------------------------------------------------------------------------------
