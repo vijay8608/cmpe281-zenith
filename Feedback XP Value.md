@@ -15,3 +15,8 @@ Necessary changes suggested :
 1. Adding functionality to remove item from cart.
 2. Displaying popular items, based on zip code entered.
 3. Adding Review Order functionality after check-out.
+
+10/14/2017
+
+1. Reviewed revised UI wireframe diagram and recorded all the feedbacks.
+2. Reviewed Activity diagram for the system.
