@@ -25,3 +25,9 @@ Insert command is used to insert documents.
 db.MenuItems.insert({"Menu_Id" :  1,"Name" : "Veg Pakora", "Price" : 10, "Type" : "Veg", "Category" : "Starters", "Quantity" : 1})
 db.MenuItems.insert({"Menu_Id" :  2,”Name" : “Manchurian”, "Price" : 10, "Type" : "Veg", "Category" : "Starters", "Quantity" : 1})
 db.MenuItems.insert({"Menu_Id" :  3,”Name" : “Chicken Tikka”, "Price" : 12, "Type" : “Non-Veg", "Category" : "Starters", "Quantity" : 1})
+
+Query:
+Query the collection MenuItems to get all vegetarian dishes
+> db.MenuItems.find( { "Type": "Veg"})
+{ "_id" : ObjectId("59ec12e89240117d57d89769"), "Menu_Id" : 1, "Name" : "Veg Pakora", "Price" : 10, "Type" : "Veg", "Category" : "Starters", "Quantity" : 1 }
+{ "_id" : ObjectId("59ec13669240117d57d8976a"), "Menu_Id" : 2, "Name" : "Manchurian", "Price" : 10, "Type" : "Veg", "Category" : "Starters", "Quantity" : 1 }
