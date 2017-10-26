@@ -1,0 +1,17 @@
+1. React is not an MVC framework—it's just a view library.
+React is a JavaScript library that can be used to describe views (for example, HTML elements) based on some state (which is often in the form of data)**. 
+When you’re working with React in a browser, React can mount the described views in the browser’s DOM (Document Object Model)
+and automatically update what needs to be updated whenever the original state changes.
+
+2. Instead of MVC and data-binding, a front-end system have a one-way data flow.
+The views never change the models directly; they can only read from the models.
+React reacts to the data changes in the model. React components will be listening to those changes,
+and React will re-render the views efficiently when those changes happen.
+
+3. Instead of REST and having the logic of what data to expose on the server-side, and
+instead of managing different end-points for different needs, clients ask the servers 
+for exactly what they need. The servers will then parse the clients' questions, and respond with what they asked for.
+
+4. Instead of separating data and views, the data requirement expressed in the view component itself. Since the view knows exactly which
+data elements it needs to render, these two are not separate at all.
+
