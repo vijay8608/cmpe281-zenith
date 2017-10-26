@@ -10,3 +10,6 @@ Everyone in the team is working on database assigned to them. Research and set u
 
 **10/07/2017**
 Refactored the UI wireframe diagram after discussion with team members
+
+**
+Refactored the Activity diagram after discusssion with team members
