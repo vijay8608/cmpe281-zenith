@@ -6,7 +6,7 @@ import {doneTodo} from "./actions";
 
 let x=0;
 
-class dvdStore extends React.Component{
+class restaurant extends React.Component{
 	
 	constructor(){
 		super();
@@ -24,3 +24,21 @@ class dvdStore extends React.Component{
         );
     }
   }
+function mapStateToProps(todos) {
+	console.log(todos);
+    const todoArr = Object.keys(todos).map((item) => (
+        {
+            'todo' : item,
+            'status' : todos[item]
+        }
+    ));
+    return {todoArr};
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        addTodo : (data) => dispatch(addTodo(data))
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(restaurant);    
