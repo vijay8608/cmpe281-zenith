@@ -81,3 +81,21 @@ Action items:
 3) Create implementation tasks and add it to backlog in task board/  10/14/2017
 
 -----------------------------------------------------------------------------------------------------------------------------
+ ### Weekly meeting 10/21 2.30-4.00pm
+ 
+ Location : MLK-Library Date : 10/21/2017 Time : 2.30-4.00pm
+
+Attendance: Sayali More Snehal Phatangare Sachin Dadaso Waghmode Shraddha Yeole Vijay Yadav
+
+Agenda: 1)Discuss UI Wireframe diagram  
+        2)Discuss Frontend using ReactJS
+        3)Update backlog with implemntation tasks
+Action items:
+
+1) Discuss UI Wireframe diagram aand divide frontend into modules/       10/21/2017 
+
+2) Discuss the progress with database implementation i.e. Cassandra/MongoDB/Neo4j/Redis/Riak/  10/21/2017
+
+3) Create implementation tasks and add it to backlog in task board/  10/21/2017
+
+-----------------------------------------------------------------------------------------------------------------------------
