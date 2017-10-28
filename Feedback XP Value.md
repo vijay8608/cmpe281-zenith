@@ -25,3 +25,7 @@ Following factors were considered for review:
 1. Basic workflow with all activities and actions.
 2. All the decision points and parameters.
 
+10/25/2017
+
+1. Reviewd UI wireframe diagram, distributed the work among everyone.
+2. Suggested changes in frontend design.
