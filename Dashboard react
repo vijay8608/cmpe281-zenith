@@ -1,0 +1,11 @@
+<div className="red">Restaurant Text</div>;
+<MyCounter count={3 + 5} />;
+
+var restaurantView = {
+  restaurant1: Starbucks ,
+  restaurant2: 4th Street Pizza
+};
+<DashboardUnit data-index="2">
+  <h1>Restaurants</h1>
+  <Restaurant className="results" scores={restaurantView} />
+</DashboardUnit>;
