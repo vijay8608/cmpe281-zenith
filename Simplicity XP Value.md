@@ -13,3 +13,7 @@ Refactored the UI wireframe diagram after discussion with team members
 
 **
 Refactored the Activity diagram after discusssion with team members
+
+**10/21/2017**
+Divided the frontend modules in team and following the simple design that supports current functionality. 
+In backend maintained the simplicity by following step by step implementation.
