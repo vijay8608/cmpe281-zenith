@@ -1,0 +1,58 @@
+[
+  {
+  "_id": "R1",
+  "name":"Morris Park Bake Shop",
+  "description":"A superb collection of fine baked cookies",
+  "address": {
+     "street": "1007",
+     "city": "San Jose",
+     "state": "CA",
+     "zip": 95112
+  },
+  "phone": "(800)555-1234",
+  "rating": 4,
+  "openingHours": "Monday through Thursday 10am-12pm. Friday through Sunday 10am-9pm"
+  },
+  {
+  "_id": "R2",
+  "name":"Fondue for Fun and Fantasy",
+  "description":"Fantastic and fun for all your cheesy occasions",
+  "address": {
+     "street": "Lemur Ave07",
+     "city": "Sunnyvale",
+     "state": "CA",
+     "zip": 94086
+  },
+  "phone": "(155)501-0033",
+  "rating": 4.4,
+  "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 11:30-23:00"
+  },
+  {
+  "_id": "R3",
+  "name":"The Cheesecake Factory",
+  "description":"Everything you want..",
+  "address": {
+     "street": "925 Blossom Hill Rd",
+     "city": "San Jose",
+     "state": "CA",
+     "zip": 95123
+  },
+  "phone": "(408)225-6948",
+  "rating": 4.2,
+  "openingHours": "Sunday through Saturday 11am-11pm"
+  },
+  {
+  "_id": "R4",
+  "name":"4th St Pizza Co",
+  "description":"Local hangout serving San Jose-themed pizzas & a variety of wings alongside 40 TVs & a 40-ft. bar.",
+  "address": {
+     "street": "50 E Santa Clara St",
+     "city": "San Jose",
+     "state": "CA",
+     "zip": 95113
+  },
+  "phone": "(408) 286-7500",
+  "rating": 4.2,
+  "openingHours": "Sunday through Wendesday 11am-10pm. Thrusday through Saturday 11am-2am"
+  }
+]
