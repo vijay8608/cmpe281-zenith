@@ -99,3 +99,25 @@ Action items:
 3) Create implementation tasks and add it to backlog in task board/  10/21/2017
 
 -----------------------------------------------------------------------------------------------------------------------------
+ ### Weekly meeting 10/28 2pm-3.30pm
+ 
+ Location : MLK-Library Date : 10/28/2017 Time : 2.00-3.30pm
+
+Attendance: Sayali More Snehal Phatangare Sachin Dadaso Waghmode Shraddha Yeole Vijay Yadav
+
+Agenda: 
+1) Discuss procedure for version control  
+2) Discuss database implementation 
+3) Update backlog with implementation tasks
+
+Action items:
+
+1) Discuss to follow for code updates and Github commits        10/28/2017
+
+2) Discuss the progress and difficulties faced with database implementation i.e. Cassandra/MongoDB/Neo4j/Redis/Riak/  10/28/2017
+
+3) Create implementation tasks and add it to backlog in task board/  10/28/2017
+
+4) Discussed CAP theorem values for each Database to be implemented     10/28/2017
+
+-----------------------------------------------------------------------------------------------------------------------------
