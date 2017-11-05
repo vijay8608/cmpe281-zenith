@@ -112,7 +112,7 @@ Agenda:
 
 Action items:
 
-1) Discuss to follow for code updates and Github commits        10/28/2017
+1) Discuss procedure to follow for code updates and Github commits        10/28/2017
 
 2) Discuss the progress and difficulties faced with database implementation i.e. Cassandra/MongoDB/Neo4j/Redis/Riak/  10/28/2017
 
