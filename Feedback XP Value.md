@@ -25,3 +25,9 @@ Following factors were considered for review:
 1. Basic workflow with all activities and actions.
 2. All the decision points and parameters.
 
+
+10/22/2017
+
+1. Reviewed overall system architecture and discussed overall flow of the system.
+2. Reviewed basic functionality performed by the system.  
+
