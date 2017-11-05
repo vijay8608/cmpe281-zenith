@@ -8,3 +8,5 @@ We are going to focus on below mentioned fear factors during the project develop
 We have discussed the challenges each of us faced during local setup for database models and agreed to implement review comments. 
 
 We have discussed the challenges each of us faced during implementation of UI pages and agreed to implement review comments. 
+
+As per the plan team has been working on the nodejs implementation and there is no risk of changing the implementation logic according to professor's comments.
