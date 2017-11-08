@@ -1,0 +1,17 @@
+var mongoose = require('mongoose');
+
+var RestaurantSchema = new mongoose.Schema({
+  name: String,
+  description: String,
+  address: {
+    street: String, 
+    city: String,
+    state: String,
+    zip: Number
+  },
+  phone: String,
+  rating: Number,
+  openingHours: String
+});
+
+module.exports = mongoose.model('Restaurants', RestaurantSchema);
