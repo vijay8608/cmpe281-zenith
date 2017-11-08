@@ -1,0 +1,21 @@
+Restaurant:
+_id: 
+Primary Key.  Format: R1
+name: STRING
+description: STRING
+address{Street, City, State, Zip} : COMPOSITE TEXT
+phone: TEXT
+rating: DOUBLE 
+Value can be between 0-5
+openingHours: STRING 
+Monday through Thursday 10am-12pm. Friday through Sunday 10am-9pm
+
+Menu Item
+_id
+Primary Key.  Format: M1
+restaurant_id: _id from Restaurant
+name: STRING
+description: STRING
+price: DOUBLE
+category: ARRAY Veg/Non-Veg
+sub_category: ARRAY Starter/Main Course/Dessert
