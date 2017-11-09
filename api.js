@@ -13,3 +13,26 @@ router.route("/restaurants")
 			return res.send(200,advs);
 		});
 })
+
+router.route("/cart")
+.get(function(req, res)
+{
+    console.log("In Get");
+
+    console.log(req.params.username);
+      Cart.find({ 'username' :  req.params.username },
+      function(err, cartd) {
+
+        if (err){
+          console.log('In error');
+          res.send(err);
+        }
+
+        //console.log(cartd.quantity);
+        console.log('User logged in');
+        console.log(cartd);
+        res.json(cartd);
+
+      });
+
+})
