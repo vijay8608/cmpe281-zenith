@@ -3,6 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+	state = {
+		restaurantname : '',
+		address : '',
+		contact : '',
+		menu : '',
+		
+	};
+addtodo(){
+	//get the details over here
+};
   render() {
     return (
       //display restaurant details
@@ -25,7 +35,7 @@ class App extends Component {
 						<span className="itemName">Subway $20.00</span>
 						<button
 							onClick={() => {
-                                this.props.addTodo("Subway");
+                                this.state.addTodo("Subway");
 								addQuantity("Subway");
                                 newTotal(20)
                             }}>+</button>
@@ -35,6 +45,14 @@ class App extends Component {
 				</div>	
 		
 			</div>
+			<div classname="col-md-3">
+				{ this.prop.message && (
+				 <div classname ="alert alert-warning" role="alert">
+				 {this.props.message}
+				</div>
+
+				)
+			}
 </div>
     );
   }
