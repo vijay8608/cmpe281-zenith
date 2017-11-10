@@ -15,6 +15,39 @@ router.route("/restaurants")
 })
 
 router.route("/cart")
+
+
+.post(function(req, res)
+{
+  var username = req.param("username");
+  var type = req.param("type");
+  var description = req.param("description");
+  var quantity = req.param("quantity");
+  var price = req.param("price");
+
+  console.log('In cart post');
+  console.log(username);
+  console.log(type);
+  console.log(description);
+  console.log(quantity);
+  console.log(price);
+  var cart_details = new Cart();
+
+  cart_details.username = username;
+  cart_details.type = type;
+  cart_details.description = description;
+  cart_details.quantity = quantity;
+  cart_details.price = price;
+console.log(':::::::::::::::::::::::');
+cart_details.save(function(err) {
+    if (err){
+      console.log('Error in Saving details: '+err);
+      throw err;
+    }
+    console.log('Done');
+  });
+    return res.send('In cart post');
+});
 .get(function(req, res)
 {
     console.log("In Get");
