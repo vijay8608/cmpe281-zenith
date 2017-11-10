@@ -33,3 +33,26 @@ var userSchema = mongoose.Schema({
     required: true,
   }
 });
+
+
+//hashing a password before saving it to the database
+
+userSchema.pre('save', function (next) {
+  var usr = this;
+  bcrypt.hash(usr.password, 10, function (err, hash) {
+    if (err) {
+      return next(err);
+    }
+    usr.password = hash;
+    next();
+  })
+});
+
+
+
+var user = module.exports = mongoose.model('user', userSchema);
+
+module.exports.addUser = function(form, callback){
+  user.create(form, callback);
+}
+
