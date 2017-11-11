@@ -1,0 +1,35 @@
+
+Using Redis in web application
+
+1.1 Use redis for handling User login and cookie caching
+
+Why redis for maintaining the User sessions?
+
+Whenever we sign in to the web application, website remember who we are using cookies. 
+Cookies are small pieces of data that websites ask our web browsers to store and resend on every request to that service. 
+For login cookies, there are two common methods of storing login information in cookies: a signed cookie or a token cookie
+Signed cookies typically store the user’s name, maybe their user ID, when they last logged in, and whatever else the service may find useful. 
+Along with this user-specific information, the cookie also includes a signature that allows the server to verify that the information that the browser sent hasn’t been altered (like replacing the login name of one user with another)
+
+As is expected, people will generally look through many different items before choosing one (or a few) to buy, and recording information about all of the different items seen, when the user last visited a page,
+and so forth, can result in substantial database writes. In the long term, that data is useful, but even with database tuning, most relational databases are limited to inserting, updating, or deleting roughly 200–2,000 
+individual rows every second per database server. 
+
+In Redis:
+
+we’ll use a HASH to store our mapping from login cookie tokens to the user that’s logged in. 
+To check the login, we need to fetch the user based on the token and return it, if it’s available. 
+
+Checking the token isn’t very exciting, because all of the interesting stuff happens when we’re updating the token itself.
+For the visit, we’ll update the login HASH for the user and record the current timestamp for the token in the ZSET of recent users. 
+If the user was viewing an item, we also add the item to the user’s recently viewed ZSET and trim that ZSET if it grows past 25 items. 
+The function that does all of this can be seen next.
+
+Over time, memory use will grow, and we’ll want to clean out old data.
+
+2.2 Shopping carts in Redis
+
+The use of shopping cart cookies is common, as is the storage of the entire cart itself in the cookie. 
+One huge advantage to storing shopping carts in cookies is that you don’t need to write to a database to keep them. 
+But one of the disadvantages is that you also need to keep reparsing and validating the cookie to ensure that it has the proper format and contains items that can actually be purchased. 
+Yet another disadvantage is that cookies are passed with every request, which can slow down request sending and processing for large cookies.

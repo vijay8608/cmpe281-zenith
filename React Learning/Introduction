@@ -15,3 +15,12 @@ for exactly what they need. The servers will then parse the clients' questions, 
 4. Instead of separating data and views, the data requirement expressed in the view component itself. Since the view knows exactly which
 data elements it needs to render, these two are not separate at all.
 
+User Interface: 
+
+1. if we have transitions on the data, we don't have to worry about the user interface—we 
+just manage the new state of our data.
+
+2.  we have to change our views if the structure of our data changes. 
+For example, when we add a Boolean flag to every product to track whether the product is in stock or not, 
+and we want to display the out-of-stock products in gray, this would be a structure transition, not just a data transition. 
+Once we account for the new structure for the first time though, updating that new flag becomes just a data transition that we don't have to worry about in the UI.
