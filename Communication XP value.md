@@ -8,3 +8,4 @@ Definition: Everyone is part of the team and communicate face to face daily. Tea
     a. What work was done yesterday
     b. What are the tasks for today
     c. Any difficulties or issues faced
+5. (11/08)Decided to use Slack for effective communication and discussions about project. 

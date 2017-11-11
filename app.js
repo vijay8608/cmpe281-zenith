@@ -17,6 +17,7 @@ app.get('/', function(req, res){
 	res.send('Hello World');
 });
 
+<<<<<<< HEAD
 
 app.post('/register', function(req, res){
 	var form = req.body;
@@ -33,3 +34,6 @@ app.listen(3000);
 
 console.log('Running on port 3000.......');
 
+=======
+//creating a seperate branch
+>>>>>>> 7a49f808efea88a47a11199cc2ddb6c801dc0a69
