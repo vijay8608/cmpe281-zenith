@@ -19,3 +19,7 @@ Team reviewed the Activity diagram and was considerate of others opinion. Each a
 10/21/2017
 
 Have shared UI page responsibilties between individuals as per there interests and learning aspirations. And team members were very supportive and shared their past experience with the respective technology. All the team mebers were available to leverage their knowledge and experiences.
+
+10/28/2017
+
+Discussed system architecture and how to implement the same with using different databases and technologies. Everyone with their individual initial project research shared information wbout their database and how we can proceed with the same.

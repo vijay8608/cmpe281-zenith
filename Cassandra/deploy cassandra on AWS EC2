@@ -1,0 +1,44 @@
+PREREQUISITES
+
+JAVA development kit (open-jdk) : It is already installed on all the EC2 intances.
+Python : Already installed on EC2 install by default if  not then just fire command $ sudo yum install python python-devel.
+Setup environment variable :  Configure  $JAVA_HOME and $PATH.
+Java Native Access (JNA) : It is required for production installations (latest version recommended), You can install it by $ sudo yum install jna.
+Add Security group rules : Open port 9160, If deploying multi-node cluster then also open ports 6042, 7199, 7000 as well.
+Note : JAVA version should be same on all the node if your doing a multi-node installation. Recommended version for latest installation is 8 and 7
+
+STEP 1 :  ADD THE DATASTAX COMMUNITY REPOSITORY TO THE /etc/yum.repos.d/datastax.repo:
+
+Create a file $ sudo nano /etc/yum.repos.d/datastax.repo
+
+
+Copy paste following content into it and save it :
+
+[datastax] 
+name = DataStax Repo for Apache Cassandra
+baseurl = http://rpm.datastax.com/community
+enabled = 1
+gpgcheck = 0
+STEP 2 : INSTALL THE PACKAGES
+
+$ sudo yum install dsc20-2.0.11-1 cassandra20-2.0.11-1
+STEP 3 :  START CASSANDRA
+
+$ sudo service cassandra start
+STEP 4 :  OPEN CQLSH UTILITY TO START EXECUTING CASSANDRA QUERY LANGUAGE (CQL) COMMANDS
+
+$ cqlsh
+if this command doesn’t work try $ cqlsh localhost 9160
+
+
+
+
+STEP 5 : CREATE A KEYSPACE
+
+cqlsh> CREATE KEYSPACE Excelsior
+  WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
+
+STEP 6 : VIEWING KEYSPACES
+
+cqlsh> DESCRIBE keyspaces;
+ 
