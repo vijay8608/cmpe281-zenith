@@ -9,4 +9,8 @@ We have discussed the challenges each of us faced during local setup for databas
 
 We have discussed the challenges each of us faced during implementation of UI pages and agreed to implement review comments. 
 
+11/04/2017
 As per the plan team has been working on the nodejs implementation and there is no risk of changing the implementation logic according to professor's comments.
+
+11/10/2017
+Team is working on the nodejs implementation and there is no change to the initial plan.
