@@ -3,7 +3,7 @@ Sample Database and Collection Creation
 Commands for database creation
 •	Create Database: use 
 > use ShoppingCart
-It is automatically switched to database Employee
+It is automatically switched to database ShoppingCart
 
 •	To check your currently selected database: db
 >db
