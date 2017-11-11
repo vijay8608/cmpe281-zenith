@@ -17,3 +17,8 @@ Refactored the Activity diagram after discusssion with team members
 **10/21/2017**
 Divided the frontend modules in team and following the simple design that supports current functionality. 
 In backend maintained the simplicity by following step by step implementation.
+
+**10/22/2017**
+
+Discussed system architecture and overall flow of the system and verified with Professor to take the simple steps towards the implementation. 
+

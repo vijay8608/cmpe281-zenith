@@ -1,0 +1,35 @@
+create keyspace doordash
+   ... with replication = {'class':'SimpleStrategy','replication_factor':1};
+   
+use doordash;
+
+create table order_doordash (order_id int primary key, order_item varchar, order_quantity int, order_price int);
+create table user_doordash (userid varchar primary key, restaurant_id varchar, order_id int, order_item varchar, order_quantity int, order_price int, order_date_time timestamp);
+
+
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (111,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (112,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (113,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (114,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (115,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (116,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (117,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (118,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (119,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (121,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (122,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (120,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (124,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (125,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (126,'Pizza',1,10);
+insert into order_doordash (order_id, order_item, order_quantity, order_price) values (127,'Pizza',1,10);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('Sachin','Starbucks001',111,'Pizza',1,10,2017-11-09 13:30:54.234);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('Saurav','Starbucks001',112,'Pizza',1,10,2017-11-19 13:30:54.234);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('Snehal','Starbucks001',113,'Pizza',1,10,2017-11-29 13:30:54.234);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('Sayali','Starbucks001',114,'Pizza',1,10,2017-11-13 13:30:54.234);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('Paul','Starbucks001',115,'Pizza',1,10,2017-11-12 13:30:54.234);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('Vijay','Starbucks001',116,'Pizza',1,10,2017-11-15 13:30:54.234);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('Shraddha','Starbucks001',117,'Pizza',1,10,2017-11-16 13:30:54.234);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('Rupesh','Starbucks001',118,'Pizza',1,10,2017-11-17 13:30:54.234);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('Ganesh','Starbucks001',119,'Pizza',1,10,2017-11-18 13:30:54.234);
+insert into user_doordash (user_id, restaurant_id, order_id int, order_item, order_quantity, order_price, order_date_time) values ('John','Starbucks001',120,'Pizza',1,10,2017-11-22 13:30:54.234);
