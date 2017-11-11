@@ -31,3 +31,8 @@ Following factors were considered for review:
 1. Reviewed overall system architecture and discussed overall flow of the system.
 2. Reviewed basic functionality performed by the system.  
 
+Week 7 : 
+
+1. Reviewed react frontend functionality and made some changes to the UI design as well as functionalities.
+2. Reviewed the overall progress and gave feedback.
+
