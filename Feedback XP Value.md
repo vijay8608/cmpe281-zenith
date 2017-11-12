@@ -25,6 +25,7 @@ Following factors were considered for review:
 1. Basic workflow with all activities and actions.
 2. All the decision points and parameters.
 
+<<<<<<< HEAD
 
 10/22/2017
 
@@ -36,3 +37,9 @@ Week 7 : 11/08/2017
 1. Reviewed react frontend functionality and made some changes to the UI design as well as functionalities.
 2. Reviewed the overall progress and gave feedback.
 
+=======
+10/25/2017
+
+1. Reviewd UI wireframe diagram, distributed the work among everyone.
+2. Suggested changes in frontend design.
+>>>>>>> origin/sayali
