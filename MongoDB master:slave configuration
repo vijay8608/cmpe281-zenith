@@ -1,0 +1,96 @@
+The following procedure outlines the steps to deploy a replica set when access control is disabled.
+
+1
+Start each member of the replica set with the appropriate options.
+
+For each member, start a mongod and specify the replica set name through the replSet option. Specify any other parameters specific to your deployment. For replication-specific parameters, see Replication Options.
+
+If your application connects to more than one replica set, each set should have a distinct name. Some drivers group replica set connections by replica set name.
+
+The following example specifies the replica set name through the --replSet command-line option:
+
+mongod --replSet "rs0"
+You can also specify the replica set name in a configuration file. To start mongod with a configuration file, specify the configuration file’s path with the --config option:
+
+mongod --config <path-to-config>
+In production deployments, you can configure a init script to manage this process. Init scripts are beyond the scope of this document.
+
+2
+Connect a mongo shell to a replica set member.
+
+For example, to connect to a mongod running on localhost on the default port of 27017, simply issue:
+
+mongo
+3
+Initiate the replica set.
+
+Use rs.initiate() on one and only one member of the replica set:
+
+rs.initiate( {
+   _id : "rs0",
+   members: [ { _id : 0, host : "mongodb0.example.net:27017" } ]
+})
+MongoDB initiates a set that consists of the current member and that uses the default replica set configuration.
+
+4
+Verify the initial replica set configuration.
+
+Use rs.conf() to display the replica set configuration object:
+
+rs.conf()
+The replica set configuration object resembles the following:
+
+{
+   "_id" : "rs0",
+   "version" : 1,
+   "protocolVersion" : NumberLong(1),
+   "members" : [
+      {
+         "_id" : 0,
+         "host" : "mongodb0.example.net:27017",
+         "arbiterOnly" : false,
+         "buildIndexes" : true,
+         "hidden" : false,
+         "priority" : 1,
+         "tags" : {
+
+         },
+         "slaveDelay" : NumberLong(0),
+         "votes" : 1
+      }
+   ],
+   "settings" : {
+      "chainingAllowed" : true,
+      "heartbeatIntervalMillis" : 2000,
+      "heartbeatTimeoutSecs" : 10,
+      "electionTimeoutMillis" : 10000,
+      "catchUpTimeoutMillis" : 2000,
+      "getLastErrorModes" : {
+
+      },
+      "getLastErrorDefaults" : {
+         "w" : 1,
+         "wtimeout" : 0
+      },
+      "replicaSetId" : ObjectId("585ab9df685f726db2c6a840")
+   }
+}
+5
+Add the remaining members to the replica set.
+
+Add the remaining members with the rs.add() method. You must be connected to the primary to add members to a replica set.
+
+rs.add() can, in some cases, trigger an election. If the mongod you are connected to becomes a secondary, you need to connect the mongo shell to the new primary to continue adding new replica set members. Use rs.status() to identify the primary in the replica set.
+
+The following example adds two members:
+
+rs.add("mongodb1.example.net")
+rs.add("mongodb2.example.net")
+When complete, you have a fully functional replica set. The new replica set will elect a primary.
+
+6
+Check the status of the replica set.
+
+Use the rs.status() operation:
+
+rs.status()
