@@ -22,3 +22,5 @@ In backend maintained the simplicity by following step by step implementation.
 
 Discussed system architecture and overall flow of the system and verified with Professor to take the simple steps towards the implementation. 
 
+Week 7 : **11/08/2017**
+Suggested some changes in UI and made changes accordingly. Everyone in the team is following same approach to develope UI.
