@@ -121,3 +121,25 @@ Action items:
 4) Discussed CAP theorem values for each Database to be implemented     10/28/2017
 
 -----------------------------------------------------------------------------------------------------------------------------
+
+
+ ### Weekly meeting 11/08 1200 to 1400
+ 
+ Location : MLK-Library Date : 11/08/2017 Time : 1200 to 1400
+
+Attendance: Sayali More Snehal Phatangare Sachin Dadaso Waghmode Shraddha Yeole Vijay Yadav
+
+Agenda: 
+1) Discussed git branch merger
+2) Discussed mongodb master slave replication and configuration on AWS
+3) Update backlog with implementation tasks
+
+Action items:
+
+1) Discussed process to follow while merging git branches to avoid conflicts and issues as much as possible        11/08/2017
+
+2) Discussed configuration of mongodb so as to achieve eventual consistency and how to go about achieving it. Also discussed the steps that will help in configuring and mainting the mongodb master slave configuration.   11/08/2017
+
+3) Create implementation tasks and add it to backlog in task board/  11/08/2017
+
+4) Went through the apis written by all team members and provided some inputs as and when needed. 11/08/2017
