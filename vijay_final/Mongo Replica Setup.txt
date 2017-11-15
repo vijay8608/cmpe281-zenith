@@ -1,0 +1,51 @@
+Mongo Replica Setup
+
+edit /etc/mongod.conf file
+
+	sudo vi /etc/mongod.conf
+
+	- add
+		replication:                                                                
+  		 	oplogSizeMB: 1                                                           
+   			replSetName: rs0
+
+   	- comment
+   		#  bindIp: 127.0.0.1  # Listen to local interface only, comment to listen on all interfaces.
+
+
+create /var/data/db
+	
+	sudo mkdir -p /var/data/db
+
+sudo mongod --dbpath /var/data/db
+
+sudo service mongod restart
+
+
+get into mongo shell on the master node
+
+mongo
+
+rs.initiate()
+
+after this the shell will show 'PRIMARY'
+
+rs.status()
+
+"stateStr" will change from unknown to starting to 
+
+rs.add("ec2-13-56-168-104.us-west-1.compute.amazonaws.com:27017")
+
+add data to table in primary and check on secondary servers
+
+
+
+rs.slaveOk() -  to enable view on slave servers
+
+and check on slave servers for replication.
+:)
+
+
+
+
+
