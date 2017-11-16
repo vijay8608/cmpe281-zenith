@@ -33,3 +33,10 @@ The use of shopping cart cookies is common, as is the storage of the entire cart
 One huge advantage to storing shopping carts in cookies is that you don’t need to write to a database to keep them. 
 But one of the disadvantages is that you also need to keep reparsing and validating the cookie to ensure that it has the proper format and contains items that can actually be purchased. 
 Yet another disadvantage is that cookies are passed with every request, which can slow down request sending and processing for large cookies.
+
+2.3 Redis & CAP Theorem
+ C & A Writes: single master Reads: any node Eventually consistent, no read-your-own-writes
+ C & P On failure: inhibit writes Consequence: decreased availability
+ A & P On failure: elect new master Consequence: inconsistent data, no easy reconciliation
+
+
