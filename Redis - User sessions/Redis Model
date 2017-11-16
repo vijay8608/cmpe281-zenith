@@ -1,0 +1,14 @@
+set carts_james ( 1 3 )
+set carts_chris ( 2 )
+hash cart_1 {
+ user : "james"
+ product_28 : 1
+ product_372: 2
+}
+hash cart_2 {
+ user : "chris"
+ product_15 : 1
+ product_160: 5
+ product_201: 7
+}
+HINCRBY cart_1 product_28 2
