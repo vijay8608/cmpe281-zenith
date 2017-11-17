@@ -39,4 +39,15 @@ Yet another disadvantage is that cookies are passed with every request, which ca
  C & P On failure: inhibit writes Consequence: decreased availability
  A & P On failure: elect new master Consequence: inconsistent data, no easy reconciliation
 
+2.4 Replication Process
+Chronology
+SLAVE: Connects to master, sends "SYNC" command
+MASTER: Begins "background save" of DB to disk
+MASTER: Begins recording all new writes
+MASTER: Transfers DB snapshot to slave
+SLAVE: Saves snapshot to disk
+SLAVE: Loads snapshot into RAM
+MASTER: Sends recorded write commands
+SLAVE: Applies recorded write commands
+SLAVE: Goes live, begins accepting requests
 
