@@ -13,6 +13,29 @@ router.route("/restaurants")
 			return res.send(200,advs);
 		});
 })
+.post(function(req, res)
+{
+  var restname = req.param("restarant_name");
+  var type = req.param("type");
+  var description = req.param("description");
+  var quantity = req.param("quantity");
+ 
+  var cart_details = new Cart();
+
+  rest_details.restname = username;
+  rest_details.type = type;
+  rest_details.description = description;
+  rest_details.quantity = quantity;
+
+rest_details.save(function(err) {
+    if (err){
+      console.log('Error in Saving details: '+err);
+      throw err;
+    }
+    console.log('Done');
+  });
+    return res.send('In rest post');
+});
 
 router.route("/cart")
 
