@@ -34,4 +34,21 @@ Now that you are connected to the “demo” keyspace, let’s insert a user int
            // Run next function in series
            callback(err, null);
        });
-   }
+   },
+      function (callback) {
+       client.execute("SELECT * FROM user_doordash WHERE order_id='111'", function (err, result) {
+           if ( result.rows.length > 0 ) {
+               var user = result.rows[0];
+               console.log("user_id = %s, timestamp=%d", user.user_id, user.timestamp);
+           } else {
+               console.log("No records");
+           }
+ 
+           // Run next function in series
+           callback(err, null);
+       });
+   },
+], function (err, results) {
+   // All finished, quit
+   process.exit();
+});
