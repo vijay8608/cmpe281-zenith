@@ -14,3 +14,6 @@ As per the plan team has been working on the nodejs implementation and there is 
 
 11/10/2017
 Team is working on the nodejs implementation and there is no change to the initial plan.
+
+11/17/2017
+Throughtout the development of project team members were able to tackle fear of failure situation through code reviews and test results. 
