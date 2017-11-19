@@ -143,3 +143,28 @@ Action items:
 3) Create implementation tasks and add it to backlog in task board/  11/08/2017
 
 4) Went through the apis written by all team members and provided some inputs as and when needed. 11/08/2017
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+### Weekly meeting 11/16 2.00 to 5.00
+ 
+ Location : MLK-Library Date : 11/16/2017 Time : 2.00 to 5.00
+
+Attendance: Sayali More Snehal Phatangare Sachin Dadaso Waghmode Shraddha Yeole Vijay Yadav
+
+Agenda: 
+1) Work on configuration of NoSQL databases.
+2) Perfomed testing on all the components.
+3) Update backlog with implementation tasks.
+
+Action items:
+
+1) Performed merging of git branches.      11/16/2017
+
+2) Worked on configuration of mongodb, redis and cassandra to achieve eventual consistency. Performed testing on all the components.  11/16/2017
+
+3) Create implementation tasks and add it to backlog in task board/  11/16/2017
+
+4) Performed the integration of all apis written by all team members and provided some inputs as and when needed. 11/16/2017
+
+
