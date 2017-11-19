@@ -23,3 +23,8 @@ Have shared UI page responsibilties between individuals as per there interests a
 10/28/2017
 
 Discussed system architecture and how to implement the same with using different databases and technologies. Everyone with their individual initial project research shared information wbout their database and how we can proceed with the same.
+
+
+11/15/2017
+
+Discussed code integration and cluster setup on aws of individual user accounts. Every team member was respectful of each others opinions and shared their valuable insights on how we should achive CAP with  our respective database.
