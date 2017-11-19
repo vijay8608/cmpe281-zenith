@@ -43,3 +43,8 @@ Week 7 : 11/08/2017
 1. Reviewd UI wireframe diagram, distributed the work among everyone.
 2. Suggested changes in frontend design.
 >>>>>>> origin/sayali
+
+Week 8 11/17/2017
+
+1. Reviewed basic flow of the system and suggested architectural changes.
+2. Suggested testing methods for overall system.
