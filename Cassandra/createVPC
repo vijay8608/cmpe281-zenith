@@ -1,0 +1,18 @@
+Creating a simple VPC with one private subnet and one public subnet for our Cassandra Cluster
+
+We describe the process here to create a VPC, but we have a script (CloudFormation template) to save you the trouble.
+
+Recall that an AWS VPC is a virtual private cloud. You can create multiple Amazon VPCs within a region that spans multiple availability zones, which is useful for Amazon Cassandra deploys and Amazon Kafka deploys. A VPC is an isolated area to deploy EC2 instances.
+
+Let’s create a new VPC for our cluster (Kafka or Cassandra). To start things off, you can use the AWS VPC creation wizard. Before you do that, create an elastic IP, which you will use for the NatGateway.
+
+Recall that Amazon EC2 instances launched in a private subnet cannot access the Internet to do updates unless there is a NAT gateway. A NAT is a network address translator. Even if you wanted to update your Cassandra or Kafka EC2 instances with yum install foo, you could not do it because they have no route to the public Internet. AWS provides NAT gateways which are similar to IGW, but unlike IGWs they do not allow incoming traffic, but rather only allow responses to outgoing traffic from your Amazon EC2 instances.
+
+Before we create the NatGateway, we need to create an EIP. First created a new EIP to associate with the new VPC. The wizard will ask you to select a VPC template, pick the one with one private network and one public network. It will ask you for the EIP id for the NatGateway.
+
+Recall that an EIP is an Elastic IP Address which is a public IP address. AWS has a pool of public IP addresses available to rent per region, and an EIP is taken from this pool.
+
+Don’t worry, we did all of this and created a CloudFormation template which we will cover in a bit, you can use the CloudFormation script instead of the Wizard, but we want to describe how we created the CloudFormation template.
+
+When using the VPC wizard, it says it is waiting for a Nat Gateway, but the NatGateway seems to be waiting for a subnet, but it is not. All you need is the EIP to give the VPC wizard; then it creates the NatGateway for you.
+
